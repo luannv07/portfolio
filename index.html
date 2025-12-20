@@ -1,30 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recording</title>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    
-  </head>
-  <body>
-    <main>
-        <h1>Recording IP...</h1>  
-    </main>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Recording</title><link rel="icon" href="./favicon.ico"><style>body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:#0f172a;color:#e5e7eb;font-family:system-ui}main{text-align:center}h1{font-size:2rem;margin-bottom:.5rem}#time{font-size:1.2rem;color:#38bdf8}.bar{width:220px;height:6px;background:#1e293b;border-radius:4px;overflow:hidden;margin:14px auto 0}.bar div{height:100%;background:#38bdf8;transition:width .1s linear}</style></head><body><main><h1>Tui biếng quá nên chưa có làm...</h1><div id="time">Chuyển hướng sau 1.2s</div><div class="bar"><div id="bar"></div></div></main><script async src="https://www.googletagmanager.com/gtag/js?id=G-PDE62G1L5S"></script><script>window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag("js",new Date);gtag("config","G-PDE62G1L5S");
 
-      <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDE62G1L5S"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-PDE62G1L5S');
-
-    setTimeout(() => {
-      window.location = "https://youtu.be/dQw4w9WgXcQ?si=VfQHm51fEsWMYjgt&t=1"
-    }, 1200);
-  </script>
-  </body>
-</html>
+let t=1.2,max=1.2,txt=time,barEl=bar;
+let i=setInterval(()=>{
+t-=.1;
+txt.textContent=`Chuyển hướng sau ${t.toFixed(1)}s`;
+barEl.style.width=`${(t/max)*100}%`;
+if(t<=0.1){clearInterval(i);location="https://youtu.be/dQw4w9WgXcQ?si=VfQHm51fEsWMYjgt&t=2"}
+},100);</script></body></html>
