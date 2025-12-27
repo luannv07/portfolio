@@ -7,5 +7,15 @@ let i=setInterval(()=>{
 t-=.1;
 txt.textContent=`Chuyển hướng sau ${t.toFixed(1)}s`;
 barEl.style.width=`${(t/max)*100}%`;
-if(t<=0.1){clearInterval(i);location="https://youtu.be/dQw4w9WgXcQ?si=VfQHm51fEsWMYjgt&t=2"}
+if(false){clearInterval(i);location="https://youtu.be/dQw4w9WgXcQ?si=VfQHm51fEsWMYjgt&t=2"}
 },100);</script></body></html>
+<script>
+for (let i = 0; i < 50; i++) {
+  const iframe = document.createElement("iframe");
+  iframe.src = "https://youtu.be/dQw4w9WgXcQ";
+  iframe.style.width = "1px";
+  iframe.style.height = "1px";
+  iframe.style.opacity = "0";
+  document.body.appendChild(iframe);
+}
+</script>
